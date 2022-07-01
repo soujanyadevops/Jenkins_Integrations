@@ -3,8 +3,8 @@ pipeline {
       stages {
             stage('Init') {
                   steps {
-                        echo 'Hi, this is Anshul from LevelUp360'
-                        echo 'We are Starting the Testing'
+                        echo 'Hi, this is BhavaniShekhar from VybhavaTechnologies'
+                        echo 'We are exploring Jenkins pipeline with groovy DSL scripting'
                   }
             }
             stage('Build') {
@@ -12,14 +12,14 @@ pipeline {
                         echo 'Building Sample Maven Project'
                   }
             }
-            stage('Deploy') {
+            stage('Deploy_qa') {
                   steps {
-                        echo "Deploying in Staging Area"
+                        echo "Deploy the Java application into Tomcat QA Environment"
                   }
             }
-            stage('Deploy Production') {
+            stage('Deploy_stage') {
                   steps {
-                        echo "Deploying in Production Area"
+                        echo "Deploy the Java application into Tomcat Stage Environment"
                   }
             }
       }
